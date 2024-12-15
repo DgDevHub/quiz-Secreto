@@ -3,16 +3,27 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url('public/images/queimada-2.jpg');
     object-fit: cover;
     height: 30rem;
     width: 100%;
     text-align: center;
+    position: relative;
+}
+.background-img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    position: absolute; /* A imagem precisa de position absolute */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Faz com que a imagem fique atrás do conteúdo */
 }
 
 #text-container-1{
     display: flex;
     flex-direction: column;
+    z-index: 1; /* Garantir que o texto fique acima da imagem */
+    position: relative; /* Necessário para aplicar z-index corretamente */
 }
 
 
