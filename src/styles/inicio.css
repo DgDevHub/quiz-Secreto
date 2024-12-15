@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url('../../public/images/queimada-2.jpg');
+    background: url('public/images/queimada-2.jpg');
     object-fit: cover;
     height: 30rem;
     width: 100%;
