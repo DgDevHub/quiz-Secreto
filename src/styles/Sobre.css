@@ -1,0 +1,168 @@
+
+#text1 {
+    background-color: var(--bk-green);
+    color: var(--text-2);
+    padding: 20px;
+}
+
+.title {
+    font-family: "Uniform";
+    font-size: 4.2rem;
+    font-weight: bold;
+    margin-bottom: -1rem;
+}
+
+#text1 p {
+    font-family: "Mont Bold";
+    font-size: 1.5rem;
+    text-align: start;
+
+}
+
+
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--bk-green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--text-1);
+}
+
+
+/*Container's */
+#text2 {
+    font-family: "Mont Medium";
+    font-weight: normal;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 32rem;
+}
+#container-painel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    /* height: 100dvh; Caso queiram o container inteiro, incluindo mapa na tela mobile */
+    background-color: var(--bk-green);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    max-height: 100%;
+}
+/* Elements */
+#frame {
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    /* height: 600px; */
+    height: 99dvh; /* Caso queiram o mapa ocupando a tela inteira no mobile */
+    width: 90%;
+
+}
+
+.imag{
+    width: 80%;
+    height: 32rem;
+}
+
+#description {
+    font-family: "Mont Bold";
+    font-size: 2rem;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.description {
+    font-size: 1.4rem;
+    text-align: justify !important;
+}
+.container p {
+    position: relative;
+    top: -0.5rem;
+    font-family: "Mont Medium";
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 20px;
+    max-height: 100%;
+    overflow: auto; 
+    word-wrap: break-word; /* Quebra palavras muito longas */
+}
+
+#date-time {
+    font-family: "Mont Bold";
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--text-2);
+}
+
+
+#date-time {
+    font-family: "Mont Bold";
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--text-2);
+}
+
+#text1 h2 {
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    font-family: "Uniform";
+}
+#text2 h2 {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    color: var(--text-1);
+    font-family: "Uniform";
+}
+#Image-responsive{
+    display: none;
+}
+@media (max-width: 468px) {
+    .imag{
+        display: none;
+        width: 70%;
+        height: 32rem;
+    }
+    #Image-responsive{
+        display: flex;
+        width: 100%;
+        height: 15rem;
+    }
+    #text2 {
+        flex-direction: column;
+    }
+    .container{
+        overflow: auto;
+    }
+    .description2{
+        width: 90%;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/Sobre.css">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header data-audio="sla.mp3">
+        <nav id="barnav">
+            <ul class="navlist">
+                <a href="Sobre.html" class="nav-itens">SOBRE</a> <!--Colocar o link da página-->
+                <a href="ajudar" class="nav-itens">AJUDAR</a> <!--Colocar o link da página-->
+                <img src="public/images/Logo Queimada.png" alt="Logo queimada" class="nav-icons">
+                <a href="index.html" class="nav-itens">INICIO</a> <!--Colocar o link da página-->
+                <a href="ajudar" class="nav-itens"> VITIMAS</a> <!--Colocar o link da página-->
+            </ul>
+        </nav>
+    </header>
+    <button id="toggle-audio">Ativar Áudio</button>
+    <!--Conteúdo-->
+    <main>
+        <section id="text1" data-audio="sla.mp3" class="animate-on-scroll hidden">
+            <h1 class="title">QUEIMADAS</h1>
+            <p class="description">Queimadas são incêndios que ocorrem em áreas naturais, como florestas, pastagens e
+                campos, podendo ser causados tanto por ação humana quanto por ocorrências naturais. Esses eventos
+                envolvem a queima de vegetação e têm impactos prejudiciais no meio ambiente, na biodiversidade, na
+                qualidade do ar e no clima. O país continua pegando fogo, entre janeiro e setembro de 2024, foram
+                registrados, 104.652 focos de fogo na Amazônia, 68.631 no Cerrado e 11.855 focos de fogo no Pantanal.
+            </p>
+        </section>
+
+        <section id="text2" data-audio="sla.mp3" class="animate-on-scroll hidden">
+            <img src="public/images/Queimada1.png" alt="icone de queimada" class="imag">
+            <img id="Image-responsive" src="./public/images/queimada1 (1).jpg" alt="">
+
+            <div class="container">
+
+                <h2>Causas das queimadas no Brasil</h2>
+                <p class="description2">
+                    Desmatamento ilegal e conversão de terras:
+                    Áreas de floresta são derrubadas e queimadas para dar lugar a pastagens ou plantações, como a
+                    soja.
+                    <br>
+                    Práticas agropecuárias:
+                    Agricultores e pecuaristas frequentemente utilizam o fogo como método barato para limpar áreas ou
+                    renovar pastagens, embora seja ilegal sem autorização em muitos casos.
+                    <br>
+                    Mudanças climáticas:
+                    O aumento das temperaturas e a diminuição da umidade intensificam a propagação do fogo, tornando as
+                    queimadas mais severas e difíceis de controlar.
+                    <br>
+                    Expansão de atividades econômicas:
+                    A exploração ilegal de madeira e mineração aumenta a pressão sobre áreas florestais, gerando
+                    incêndios intencionais ou acidentais.
+                    <br>
+                    Secas prolongadas:
+                    Eventos climáticos extremos, como El Niño, intensificam períodos de seca, tornando as florestas mais
+                    suscetíveis a incêndios.
+                    <br>
+                    Falta de fiscalização e políticas públicas:
+                    A fiscalização de fiscalização ambiental e de ações governamentais contribui para o aumento das
+                    queimadas ilegais.
+                </p>
+
+            </div>
+
+        </section>
+
+        <article id="container-painel" data-audio="sla.mp3" class="animate-on-scroll hidden">
+            <p id="description"> O mapa interativo rastreia focos de calor e disponibiliza informações sobre incêndios e queimadas no Brasil</p>
+                <div id="date-time"></div>
+            <iframe id="frame" src="https://panorama.sipam.gov.br/painel-do-fogo/#" frameborder="0"></iframe>
+        </article>
+    </main>
+
+<footer>
+        <div id="container-reviews">
+            <div class="review">
+                <div class="photo-review">
+                    <img src="./public/images/Dg.jpg" alt="">
+                </div>
+                <div class="text-review">
+                    <div class="name-review">
+                        <h2>Diego Silva</h2>
+                    </div>
+                    <div class="description-review">
+                        "Gostaria de expressar minha mais sincera gratidão por todo o apoio e dedicação recebidos. Cada gesto, palavra e atitude foi essencial e deixou marcas positivas e profundas. Sua generosidade e atenção fizeram toda a diferença, e sou imensamente grato por isso. Muito obrigado!"
+                    </div>
+                </div>
+            </div>
+    
+            <div class="review">
+                <div class="photo-review">
+                    <img src="./public/images/Dg.jpg" alt="">
+                </div>
+                <div class="text-review">
+                    <div class="name-review">
+                        <h2>Pica-pau</h2>
+                    </div>
+                    <div class="description-review">
+                        "Gostaria de expressar minha mais sincera gratidão por todo o apoio e dedicação recebidos. Cada gesto, palavra e atitude foi essencial e deixou marcas positivas e profundas. Sua generosidade e atenção fizeram toda a diferença, e sou imensamente grato por isso. Muito obrigado!"
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="nav-container">
+            <h1> Menu </h1>
+            <ul class="nav-links">
+                <a href="inicio.html"> Inicio </a>
+                <a href=""> Sobre </a>
+                <a href=""> Vitimas </a>
+                <a href=""> Ajudar </a>
+            </ul>
+            <p>Projeto Final Squad 5 M2 © 2024</p>
+            <p> Criado com dedicação e colaboração.</p>
+        </div>
+    
+        <!-- <div id="social-buttons">
+            <ul id="social-nav">
+                <img class="icon" src="./public/images/instagram-logo.png" alt="">
+            </ul>
+        </div> -->
+</footer>
+    
+    <script src="/src/js/Sobre.js"></script>
+    <script src="/src/js/Suport.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/src/js/scrollReveal.js"></script>
+</body>
+</html>
